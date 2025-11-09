@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rhythum-backend
+    env: node
+    plan: free
+    repo: https://github.com/YOURNAME/rhythum-backend
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+
+databases:
+  - name: rhythum-db
+    type: postgresql
+    plan: free
+    region: frankfurt
